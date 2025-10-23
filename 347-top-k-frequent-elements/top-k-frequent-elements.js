@@ -9,7 +9,7 @@ var topKFrequent = function(nums, k) {
 
   newArr.sort((a, b) => b[1] - a[1]); //sort in decending order
 
-  let result = newArr.slice(0, k).map(pair => Number(pair[0])); //get keys of first k elements
+  let result = newArr.slice(0, k).map(v => Number(v[0])); //get keys of first k elements
 
   console.log(result);
   return result;
